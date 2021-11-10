@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+         <record model="ir.ui.view" id="document_list_form_view">
+            <field name="name">modello.documenti</field>
+            <field name="model">modello.documenti</field>
+            <field name="arch" type="xml">
+                <form string="Liste Documenti">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <notebook>
+                            <page string="Type document list">
+                                <field name="type_document_list">
+                                    <tree editable="bottom">
+                                        <field name="type_document"/>
+                                        <field name="mandatory"/>
+                                        <field name="modello_id" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+         <record model="ir.ui.view" id="document_list_list_vire">
+            <field name="name">modello.documenti</field>
+            <field name="model">modello.documenti</field>
+            <field name="arch" type="xml">
+                <tree string="Liste Documenti">
+                    <field name="name"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_document_list">
+            <field name="name">Liste Documenti</field>
+            <field name="res_model">modello.documenti</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_document_list" name="Liste Documenti" sequence="55" action="action_document_list" parent="sale.menu_sale_config"/>
+        <menuitem  id="menu_document_list_project" name="Liste Documenti" sequence="55" action="action_document_list" parent="project.menu_project_config"/>
+
+    </data>
+</odoo>

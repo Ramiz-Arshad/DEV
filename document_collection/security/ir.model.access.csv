@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_modello_documenti,access_modello_documenti,model_modello_documenti,base.group_user,1,1,1,1
+access_dett_mod_documenti,access_dett_mod_documenti,model_dett_mod_documenti,base.group_user,1,1,1,1
+access_product_document_list,access_product_document_list,model_product_document_list,base.group_user,1,1,1,1
+access_task_document,access_task_document,model_task_document,base.group_user,1,1,1,1

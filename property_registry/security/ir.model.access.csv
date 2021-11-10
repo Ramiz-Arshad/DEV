@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_anagrafiche_imobile,access_anagrafiche_imobile,model_anagrafiche_imobile,base.group_user,1,1,1,1
+access_lista_agenzie,access_lista_agenzie,model_lista_agenzie,base.group_user,1,1,1,1
+access_lista_tipologia_copertura,access_lista_tipologia_copertura,model_lista_tipologia_copertura,base.group_user,1,1,1,1
+access_lista_td_calore,access_lista_td_calore,model_lista_td_calore,base.group_user,1,1,1,1
+access_list_tag_immobile,access_list_tag_immobile,model_list_tag_immobile,base.group_user,1,1,1,1
+access_list_tag_prod_acs,access_list_tag_prod_acs,model_list_tag_prod_acs,base.group_user,1,1,1,1
+access_tipologie_im,access_tipologie_im,model_tipologie_im,base.group_user,1,1,1,1

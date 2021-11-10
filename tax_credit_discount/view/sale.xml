@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="inherit_sale_order_form_tax_credit_discount" model="ir.ui.view">
+            <field name="name">sale.order</field>
+            <field name="model">sale.order</field>
+            <field name="priority">1</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+                <field name="payment_term_id" position="after">
+                    <field name="tax_deduction"/>
+                </field>
+                <xpath expr="//field[@name='amount_total']" position="after">
+                    <field name="invoice_discount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    <field name="amount_discounted" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="inherit_invoice_form_tax_credit" model="ir.ui.view">
+            <field name="name">account.move.form</field>
+            <field name="model">account.move</field>
+            <field name="priority">1</field>
+            <field name="inherit_id" ref="account.view_move_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='journal_div']" position="after">
+                    <field name="tax_deduction"/>
+                </xpath>
+                <xpath expr="//field[@name='amount_total'][2]" position="after">
+                    <field name="invoice_discount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                    <field name="amount_discounted" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                </xpath>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

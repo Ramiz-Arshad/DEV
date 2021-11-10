@@ -1,0 +1,425 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* property_registry
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 16:37+0000\n"
+"PO-Revision-Date: 2021-04-12 16:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__account_thermal
+msgid "Account Thermal"
+msgstr "Conto termico"
+
+#. module: property_registry
+#: model_terms:ir.ui.view,arch_db:property_registry.properies_form_view
+msgid "Acqua sanitaria"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__address
+#: model_terms:ir.ui.view,arch_db:property_registry.properies_form_view
+msgid "Address"
+msgstr "Indirizzo"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie__agency_descr
+msgid "Agency Description"
+msgstr "Descrizione Agenzie"
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_lista_agenzie
+msgid "Agency List"
+msgstr ""
+
+#. module: property_registry
+#: model_terms:ir.ui.view,arch_db:property_registry.agency_list_form_view
+#: model_terms:ir.ui.view,arch_db:property_registry.agency_list_list_view
+msgid "Agency list"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_anagrafiche_imobile
+msgid "Anagrafiche Imobile"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.ui.menu,name:property_registry.menu_property_list_sub
+msgid "Anagrafiche immobile"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__fixtures
+msgid "Are we also interested in the fixtures situation?"
+msgstr "Si è interessatianche alla situazione degliinfissi?"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__brand
+msgid "Brand"
+msgstr "Marca"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__cadas_categ
+msgid "Cadastral category"
+msgstr "Cat. Catastale"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__city
+msgid "City"
+msgstr "Città"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__coowner
+msgid "Co-Owner"
+msgstr "Cointestatario"
+
+#. module: property_registry
+#: model_terms:ir.ui.view,arch_db:property_registry.inherit_partner_form_property_registery_ai
+msgid "Co-owner"
+msgstr "Proprietario"
+
+#. module: property_registry
+#: model_terms:ir.ui.view,arch_db:property_registry.properies_form_view
+msgid "Cointestatario"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__costr_year
+msgid "Construction year"
+msgstr "Anno di Costruzione"
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_res_partner__coowner_property
+#: model:ir.model.fields,field_description:property_registry.field_res_users__coowner_property
+msgid "Coowner property"
+msgstr "Immobili in comproprietà"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__create_uid
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile__create_uid
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs__create_uid
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie__create_uid
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore__create_uid
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura__create_uid
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__create_date
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile__create_date
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs__create_date
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie__create_date
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore__create_date
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura__create_date
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_list_tag_prod_acs
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__dwh_prod_tag
+msgid "DWH production tag"
+msgstr "Tag Produzione Acqua Calda"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__date_stacking
+msgid "Date Stacking"
+msgstr "Data Accatastamento"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__display_name
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile__display_name
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs__display_name
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie__display_name
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore__display_name
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura__display_name
+#: model:ir.model.fields,field_description:property_registry.field_res_partner__display_name
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__prev_thermal_system
+msgid "Does the property have a previous thermal system?"
+msgstr "L'immobile presenta unimpianto termico pregresso?"
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_lista_td_calore
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__heat_distrib
+msgid "Heat distribution"
+msgstr "Distribuzione delcalore"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore__heat_distr_descr
+msgid "Heat distribution description"
+msgstr "Descrizione tipologia distributore dicalore"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__id
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile__id
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs__id
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie__id
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore__id
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura__id
+#: model:ir.model.fields,field_description:property_registry.field_res_partner__id
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im__id
+msgid "ID"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.actions.act_window,name:property_registry.action_property
+#: model:ir.ui.menu,name:property_registry.menu_property_list
+#: model_terms:ir.ui.view,arch_db:property_registry.inherit_partner_form_property_registery_ai
+msgid "Immobili"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__inhabited_attic
+msgid "Inhabited Attic"
+msgstr "Sottotetto abitato"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile____last_update
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile____last_update
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs____last_update
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie____last_update
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore____last_update
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura____last_update
+#: model:ir.model.fields,field_description:property_registry.field_res_partner____last_update
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__write_uid
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile__write_uid
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs__write_uid
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie__write_uid
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore__write_uid
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura__write_uid
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__write_date
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile__write_date
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs__write_date
+#: model:ir.model.fields,field_description:property_registry.field_lista_agenzie__write_date
+#: model:ir.model.fields,field_description:property_registry.field_lista_td_calore__write_date
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura__write_date
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.actions.act_window,name:property_registry.action_roof_type
+#: model:ir.ui.menu,name:property_registry.menu_roof_type
+msgid "List tipologia coperuta"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.actions.act_window,name:property_registry.action_agency_type
+#: model:ir.ui.menu,name:property_registry.menu_agency_list
+msgid "Lista agenzie"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.actions.act_window,name:property_registry.action_heat_distribution
+#: model:ir.ui.menu,name:property_registry.menu_heat_dis
+msgid "Lista tipologia distribuzione calore"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__model
+msgid "Model"
+msgstr "Modello"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__coowner_ids
+msgid "Name/Surname of the Co-Owner"
+msgstr "Nome/Cognome del Cointestatario"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__note
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__note_sec
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__note_third
+msgid "Note"
+msgstr "Nota"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__owner_id
+msgid "Owner id"
+msgstr "Proprietario"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__parcel
+msgid "Parcel"
+msgstr "Particella"
+
+#. module: property_registry
+#: code:addons/property_registry/models/property_list.py:0
+#, python-format
+msgid "Please city city of co-owners you add."
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__presence_photov_system
+msgid "Presence of a photovoltaic system"
+msgstr "Presenza di unimpianto fotovoltaico"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__presence_prev_solar_thermal_plant
+msgid "Presence of a previous solar thermal plant"
+msgstr "Presenza di unimpianto solaretermico pregresso"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_prod_acs__prod_dwh_tag
+msgid "Production DWH tag description"
+msgstr "Descrizione tag prod ACS"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__dwh_prod_kw
+msgid "Production of Domestic Water Heating (DWH) (kw)"
+msgstr "Produzione diacqua caldasanitaria (ACS)(kw)"
+
+#. module: property_registry
+#: model:ir.actions.act_window,name:property_registry.action_property_tag_dwh
+#: model:ir.ui.menu,name:property_registry.menu_property_tag_dwh
+msgid "Produzione ACS"
+msgstr ""
+
+#. module: property_registry
+#: model_terms:ir.ui.view,arch_db:property_registry.properies_form_view
+msgid "Produzione impianto"
+msgstr ""
+
+#. module: property_registry
+#: model_terms:ir.ui.view,arch_db:property_registry.properies_form_view
+msgid "Properies"
+msgstr ""
+
+#. module: property_registry
+#: model_terms:ir.ui.view,arch_db:property_registry.properies_type_form_view
+#: model_terms:ir.ui.view,arch_db:property_registry.properies_type_list_view
+msgid "Properies Type"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__prop_tag
+msgid "Property Tag"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_res_partner__prop_list
+#: model:ir.model.fields,field_description:property_registry.field_res_users__prop_list
+msgid "Property list"
+msgstr "Lista immobi"
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_list_tag_immobile
+msgid "Property tag"
+msgstr "Tag immobile"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_list_tag_immobile__prop_tag_descr
+msgid "Property tag description"
+msgstr "Descrizione tag immobile"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_lista_tipologia_copertura__roof_type_desc
+msgid "Roof type description"
+msgstr "Descrizione tipologia copertura"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__sheet
+msgid "Sheet"
+msgstr "Foglio"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__property_size
+msgid "Size of property"
+msgstr "Superficie immobile"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__roof_size
+msgid "Size of roof"
+msgstr "Superficie copertura"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__sub
+msgid "Sub"
+msgstr "Sub"
+
+#. module: property_registry
+#: model:ir.actions.act_window,name:property_registry.action_property_tag
+#: model:ir.ui.menu,name:property_registry.menu_property_tag
+msgid "Tag Immobile"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__techn_name
+msgid "Technical Name"
+msgstr "Nome Tecnico"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__technical_reference
+msgid "Technical Reference"
+msgstr "Tecnico diriferimento"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__urban_congruity
+msgid "The assessment of urban congruity is required"
+msgstr "Si richiede l'accertamento dicongruità urbanistica"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__prop_no_discrep
+msgid "The property has no discrepancies"
+msgstr "L'immobile nonpresenta difformità"
+
+#. module: property_registry
+#: model:ir.actions.act_window,name:property_registry.action_property_type
+#: model:ir.ui.menu,name:property_registry.menu_property_type
+msgid "Tipologie immobili"
+msgstr ""
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_tipologie_im
+msgid "Type of"
+msgstr "Tipologia"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__property_ty
+msgid "Type of property"
+msgstr "Tipologia"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_tipologie_im__property_type
+msgid "Type of property list"
+msgstr "Descrizione tipologie immobili"
+
+#. module: property_registry
+#: model:ir.model,name:property_registry.model_lista_tipologia_copertura
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__roof_type
+msgid "Type of roof"
+msgstr "Tipologia copertura"
+
+#. module: property_registry
+#: model:ir.model.fields,field_description:property_registry.field_anagrafiche_imobile__zip
+msgid "ZIP"
+msgstr "CAP"

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="wizard_create_document" model="ir.ui.view">
+            <field name="name">Create Document</field>
+            <field name="model">task.document</field>
+            <field name="arch" type="xml">
+             <form>
+                    <group>
+                        <field name="document_model_ids" widget="many2many_tags" options="{'no_create_edit': True, 'no_create':True}"/>
+                    </group>
+                <footer>
+                    <button string="Confirm" name="generate_document" type="object" class="oe_highlight"/>
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+             </form>
+           </field>
+        </record>
+
+    </data>
+</odoo>
+

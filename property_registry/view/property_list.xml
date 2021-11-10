@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+         <record model="ir.ui.view" id="properies_form_view">
+            <field name="name">anagrafiche.imobile</field>
+            <field name="model">anagrafiche.imobile</field>
+            <field name="arch" type="xml">
+                <form string="Properies">
+                    <sheet>
+                        <group>
+                            <div class="oe_title">
+                                <h1>
+                                    <field name="address" placeholder="Address"/>
+                                </h1>
+                            </div>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="owner_id" invisible="context.get('default_owner_id')"/>
+                                <field name="city"/>
+                                <field name="zip"/>
+                                <field name="sheet"/>
+                                <field name="parcel"/>
+                                <field name="sub"/>
+                                <field name="note"/>
+                                <field name="cadas_categ"/>
+                                <field name="costr_year"/>
+                                <field name="date_stacking"/>
+                            </group>
+                            <group>
+                                <field name="property_ty"/>
+                                <field name="property_size"/>
+                                <field name="roof_size"/>
+                                <field name="roof_type"/>
+                                <field name="presence_photov_system"/>
+                                <field name="inhabited_attic"/>
+                                <field name="technical_reference"/>
+                                <field name="techn_name" attrs="{'invisible': [('technical_reference','=',False )]}"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Cointestatario">
+                                <group>
+                                    <field name="coowner_ids" domain="[('id','!=',owner_id)]">
+                                        <tree>
+                                            <field name="name"/>
+                                            <field name="city"/>
+                                            <field name="country_id"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Acqua sanitaria">
+                                <group>
+                                    <group>
+                                        <field name="presence_prev_solar_thermal_plant"/>
+                                        <field name="fixtures"/>
+                                        <field name="prev_thermal_system"/>
+                                        <field name="note_sec"/>
+                                        <field name="brand"/>
+                                        <field name="model"/>
+                                    </group>
+                                    <group>
+                                        <field name="prop_tag"></field>
+                                    </group>
+                                </group>
+                            </page>
+                            <page string="Produzione impianto">
+                                <group>
+                                    <group>
+                                        <field name="account_thermal"/>
+                                        <field name="note_third"/>
+                                        <field name="heat_distrib"/>
+                                        <field name="urban_congruity"/>
+                                        <field name="prop_no_discrep"/>
+                                    </group>
+                                    <group>
+                                        <field name="dwh_prod_kw"/>
+                                        <field name="dwh_prod_tag"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+         <record model="ir.ui.view" id="proprties_list_view">
+            <field name="name">anagrafiche.imobile</field>
+            <field name="model">anagrafiche.imobile</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="address"/>
+                    <field name="owner_id"/>
+                    <field name="property_ty"/>
+                    <field name="account_thermal"/>
+                    <field name="property_size"/>
+                    <field name="roof_size"/>
+                    <field name="roof_type"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_property">
+            <field name="name">Immobili</field>
+            <field name="res_model">anagrafiche.imobile</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_property_list" name="Immobili" sequence="55" action="action_property" parent="sale.sale_menu_root"/>
+        <menuitem  id="menu_property_list_sub" name="Anagrafiche immobile" sequence="1" action="action_property" parent="menu_property_list"/>
+
+         <record model="ir.ui.view" id="properies_type_form_view">
+            <field name="name">tipologie.im</field>
+            <field name="model">tipologie.im</field>
+            <field name="arch" type="xml">
+                <form string="Properies Type">
+                    <sheet>
+                        <group>
+                            <field name="property_type"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+        <record model="ir.ui.view" id="properies_type_list_view">
+            <field name="name">tipologie.im</field>
+            <field name="model">tipologie.im</field>
+            <field name="arch" type="xml">
+                <tree string="Properies Type">
+                    <field name="property_type"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_property_type">
+            <field name="name">Tipologie immobili</field>
+            <field name="res_model">tipologie.im</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_property_type" name="Tipologie immobili" sequence="2" action="action_property_type" parent="menu_property_list"/>
+
+        <record model="ir.ui.view" id="agency_list_form_view">
+            <field name="name">lista.agenzie</field>
+            <field name="model">lista.agenzie</field>
+            <field name="arch" type="xml">
+                <form string="Agency list">
+                    <sheet>
+                        <group>
+                            <field name="agency_descr"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+        <record model="ir.ui.view" id="agency_list_list_view">
+            <field name="name">lista.agenzie</field>
+            <field name="model">lista.agenzie</field>
+            <field name="arch" type="xml">
+                <tree string="Agency list">
+                    <field name="agency_descr"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_agency_type">
+            <field name="name">Lista agenzie</field>
+            <field name="res_model">lista.agenzie</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_agency_list" name="Lista agenzie" sequence="3" action="action_agency_type" parent="menu_property_list"/>
+
+        <record model="ir.ui.view" id="roof_type_form_view">
+            <field name="name">lista.tipologia.copertura</field>
+            <field name="model">lista.tipologia.copertura</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="roof_type_desc"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+        <record model="ir.ui.view" id="roof_type_list_view">
+            <field name="name">lista.tipologia.copertura</field>
+            <field name="model">lista.tipologia.copertura</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="roof_type_desc"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_roof_type">
+            <field name="name">List tipologia coperuta</field>
+            <field name="res_model">lista.tipologia.copertura</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_roof_type" name="List tipologia coperuta" sequence="4" action="action_roof_type" parent="menu_property_list"/>
+
+         <record model="ir.ui.view" id="heat_dis_form_view">
+            <field name="name">lista.td.calore</field>
+            <field name="model">lista.td.calore</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="heat_distr_descr"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+        <record model="ir.ui.view" id="heat_dis_list_view">
+            <field name="name">lista.td.calore</field>
+            <field name="model">lista.td.calore</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="heat_distr_descr"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_heat_distribution">
+            <field name="name">Lista tipologia distribuzione calore</field>
+            <field name="res_model">lista.td.calore</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_heat_dis" name="Lista tipologia distribuzione calore" sequence="5" action="action_heat_distribution" parent="menu_property_list"/>
+
+        <record model="ir.ui.view" id="property_tag_form_view">
+            <field name="name">list.tag.immobile</field>
+            <field name="model">list.tag.immobile</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="prop_tag_descr"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+        <record model="ir.ui.view" id="property_tag_list_view">
+            <field name="name">list.tag.immobile</field>
+            <field name="model">list.tag.immobile</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="prop_tag_descr"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_property_tag">
+            <field name="name">Tag Immobile</field>
+            <field name="res_model">list.tag.immobile</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_property_tag" name="Tag Immobile" sequence="6" action="action_property_tag" parent="menu_property_list"/>
+
+        <record model="ir.ui.view" id="property_tag_dwh_form_view">
+            <field name="name">list.tag.prod.acs</field>
+            <field name="model">list.tag.prod.acs</field>
+            <field name="arch" type="xml">
+                <form string="">
+                    <sheet>
+                        <group>
+                            <field name="prod_dwh_tag"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+         </record>
+
+        <record model="ir.ui.view" id="property_tag_dwh_list_view">
+            <field name="name">list.tag.prod.acs</field>
+            <field name="model">list.tag.prod.acs</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="prod_dwh_tag"/>
+                </tree>
+            </field>
+         </record>
+
+        <record model="ir.actions.act_window" id="action_property_tag_dwh">
+            <field name="name">Produzione ACS</field>
+            <field name="res_model">list.tag.prod.acs</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+        </record>
+
+        <menuitem  id="menu_property_tag_dwh" name="Produzione ACS" sequence="7" action="action_property_tag_dwh" parent="menu_property_list"/>
+
+    </data>
+</odoo>

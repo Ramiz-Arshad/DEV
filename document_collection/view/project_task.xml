@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+      <record id="inherit_task_from_document" model="ir.ui.view">
+            <field name="name">Task</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_form2"/>
+            <field name="arch" type="xml">
+                <header position="inside">
+                    <button name="create_document" class="btn primary" string="Create Document" type="object"/>
+                    <button name="export_zip" attrs="{'invisible': [('all_document_collected','=',0)]}" class="btn primary" string="Export Zip" type="object"/>
+                    <button name="export_zip_send_email" attrs="{'invisible': [('all_document_collected','=',0)]}" class="btn primary" string="Zip and send email" type="object"/>
+                    <field name="all_document_collected" invisible="0"/>
+                </header>
+                <xpath expr="//page[@name='extra_info']" position="after">
+                    <page name="task_doc_list" string="Necessary Documents">
+                        <field name="task_doc_list">
+                            <tree editable="bottom" create="0" delete="0">
+                                <field name="document_type" readonly="1"></field>
+                                <field name="mandatory" readonly="1"/>
+                                <field name="name" invisible="1"></field>
+                                <field name="datas" string="Document" filename="name"/>
+                                <field name="task_id" invisible="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+          <record id="inherit_task_from_document1" model="ir.ui.view">
+            <field name="name">Task</field>
+            <field name="model">project.task</field>
+            <field name="groups_id" eval="[(6, 0, [ref('document_collection.group_sale_order_document')])]" />
+            <field name="inherit_id" ref="document_collection.inherit_task_from_document"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='task_doc_list']" position="replace">
+                    <page name="task_doc_list" string="Necessary Documents">
+                        <field name="task_doc_list">
+                            <tree editable="bottom">
+                                <field name="document_type"></field>
+                                <field name="mandatory"/>
+                                <field name="name" invisible="1"></field>
+                                <field name="datas" string="Document" filename="name"/>
+                                <field name="task_id" invisible="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

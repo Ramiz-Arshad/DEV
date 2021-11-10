@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="inherit_partner_form_property_registery_ai" model="ir.ui.view">
+            <field name="name">res.partner</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <page name="internal_notes" position="after">
+                    <page string="Immobili">
+                        <group col="4">
+                            <field name="prop_list">
+                                <tree>
+                                    <field name="address"/>
+                                    <field name="city"/>
+                                    <field name="owner_id" invisible="1"/>
+                                </tree>
+                            </field>
+                            <field name="coowner_property" readonly="0">
+                                <tree>
+                                    <field name="address"/>
+                                    <field name="city"/>                                        
+                                    <field name="owner_id" invisible="1"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </page>
+                </page>
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    
+    <record id="view_project_task_form_extended" model="ir.ui.view">
+        <field name="name">project.task.form.extended</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2" />
+        <field name="arch" type="xml">
+            <button name="action_recurring_tasks" position="after">
+                <button type="object" class="oe_stat_button" icon="fa-arrows-v" name="action_view_pickings">
+                    <div class="o_form_field o_stat_info">
+                        <span class="o_stat_text">Picking</span>
+                    </div>
+                </button>
+            </button>
+            
+        </field>
+    </record>
+    
+     <record id="view_project_delivery_addr" model="ir.ui.view">
+        <field name="name">project.project.form</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project" />
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="delivery_address_id" domain="[('parent_id', '=', partner_id), ('type', '=', 'delivery')]"/>
+            </field>
+        </field>
+    </record>
+    
+</odoo>

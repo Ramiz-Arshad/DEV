@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+          <record id="product_form_inherit_document" model="ir.ui.view">
+            <field name="name">product.product.template</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='purchase']" position="after">
+                    <page name="document" string="Documenti Necessari">
+                        <group>
+                            <field name="model_document_id"/>
+                        </group>
+                        <button name="fetch_document_list" attrs="{'invisible':[('model_document_id','=',False)]}" string="Create Document" type="object" class="btn btn-primary"></button>
+                        <field name="prod_doc_list" readonly="1">
+                            <tree>
+                                <field name="document_type"/>
+                                <field name="mandatory"/>
+                                <field name="product_id" invisible="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

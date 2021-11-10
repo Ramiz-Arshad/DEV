@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="group_sale_order_document" model="res.groups">
+            <field name="name">Allow to create and delete document in sale order</field>
+        </record>
+
+    </data>
+</odoo>

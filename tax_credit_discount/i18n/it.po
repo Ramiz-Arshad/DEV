@@ -1,0 +1,149 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tax_credit_discount
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-31 08:44+0000\n"
+"PO-Revision-Date: 2021-08-31 08:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__credit_account_id
+msgid "Credit Account"
+msgstr "Avere"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_bank_statement_line__credit_custom_move_id
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_move__credit_custom_move_id
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_payment__credit_custom_move_id
+msgid "Credit Custom Move"
+msgstr ""
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__debit_account_id
+msgid "Debit Account"
+msgstr "Dare"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__name
+msgid "Description"
+msgstr "Descrizione"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_move__display_name
+#: model:ir.model.fields,field_description:tax_credit_discount.field_sale_order__display_name
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__extra_credit_account_id
+msgid "Extra Credit Account"
+msgstr "Extra Avere"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__extra_debit_account_id
+msgid "Extra Debit Account"
+msgstr "Extra Dare"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__extra_discount_percentage
+msgid "Extra Discount Percentage"
+msgstr "Extra sconto"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_move__id
+#: model:ir.model.fields,field_description:tax_credit_discount.field_sale_order__id
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__id
+msgid "ID"
+msgstr ""
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_bank_statement_line__invoice_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_move__invoice_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_payment__invoice_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_sale_order__invoice_discount
+msgid "Invoice Discount"
+msgstr "Sconto in fattura"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__journal_id
+msgid "Journal"
+msgstr "Registro"
+
+#. module: tax_credit_discount
+#: model:ir.model,name:tax_credit_discount.model_account_move
+msgid "Journal Entry"
+msgstr "Registrazione contabile"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_move____last_update
+#: model:ir.model.fields,field_description:tax_credit_discount.field_sale_order____last_update
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount____last_update
+msgid "Last Modified on"
+msgstr "Ultima modifica il"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_tax_credit_discount__discount_percentage
+msgid "Percentage"
+msgstr "Percentuale"
+
+#. module: tax_credit_discount
+#: model:ir.model,name:tax_credit_discount.model_sale_order
+msgid "Sales Order"
+msgstr "Ordine di vendita"
+
+#. module: tax_credit_discount
+#: model:ir.actions.act_window,name:tax_credit_discount.action_tax_credit_discount
+#: model:ir.ui.menu,name:tax_credit_discount.menu_tax_credit_discount
+msgid "Tax Credit Discount"
+msgstr ""
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_bank_statement_line__tax_deduction
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_move__tax_deduction
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_payment__tax_deduction
+#: model:ir.model.fields,field_description:tax_credit_discount.field_sale_order__tax_deduction
+msgid "Tax Deduction"
+msgstr "Detrazione fiscale"
+
+#. module: tax_credit_discount
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_bank_statement_line__amount_discounted
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_move__amount_discounted
+#: model:ir.model.fields,field_description:tax_credit_discount.field_account_payment__amount_discounted
+#: model:ir.model.fields,field_description:tax_credit_discount.field_sale_order__amount_discounted
+msgid "Total Amount Discounted"
+msgstr "Totale da pagare"
+
+#. module: tax_credit_discount
+#: model:ir.model,name:tax_credit_discount.model_tax_credit_discount
+msgid "tax.credit.discount"
+msgstr ""
